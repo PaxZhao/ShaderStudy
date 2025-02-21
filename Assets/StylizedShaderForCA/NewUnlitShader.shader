@@ -22,6 +22,9 @@ Shader "ShaderStudy/NewUnlitShader"
         {
             //pass tags
 
+            Blend One One // additive
+            //Blend DstColor Zero // multiply
+
 
             CGPROGRAM //equals to HLSL code
             #pragma vertex vert
@@ -96,7 +99,14 @@ Shader "ShaderStudy/NewUnlitShader"
                 //UNITY_APPLY_FOG(i.fogCoord, col);
                 //return float4(UnityObjectToWorldNormal(i.normal), 1);
                 //float t = abs(frac(i.uv.x * 5)*2 -1);
-                float t = cos(i.uv.x * TAU * 5)*.5+.5; // will start and end at the same value
+                
+                //_Time.xyzw // _Time.y is seconds, _Time.z is milliseconds, _Time.w is microseconds(senconds/20)
+
+
+                float Xoffset =cos( i.uv.x * TAU * 8) *.01;
+                float t = cos((i.uv.y + Xoffset - _Time.y *.1) * TAU * 5)*.5+.5; // will start and end at the same value
+                //t = t * t * t * t * t; // add some curvature to the curve
+                t *= 1-i.uv.y;
                 return t;
             
                 //lerp
