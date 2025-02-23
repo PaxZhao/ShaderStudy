@@ -81,8 +81,8 @@ Material:
     m_Floats:
     - Brightness_Rim: 0.6
     - Rim_Power: 1.6
-    - Toon_Ramp_Offset: 0.45
-    - Toon_Ramp_Smoothness: 0.48
+    - Toon_Ramp_Offset: 0.48
+    - Toon_Ramp_Smoothness: 0.21
     - _AOpacity: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
@@ -90,12 +90,12 @@ Material:
     - _Blend: 0
     - _BlendModePreserveSpecular: 0
     - _CastShadows: 1
-    - _CrackStrength: 8.77
+    - _CrackStrength: -66.94
     - _Cull: 0
     - _DstBlend: 0
     - _GOpacity: 1
     - _MetallicStrength: 0.36
-    - _NormalStrength: 13.34
+    - _NormalStrength: 0.9
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ROpacity: 1
@@ -114,6 +114,6 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _DColor: {r: 0, g: 0, b: 0, a: 0}
     - _GColor: {r: 0.31011927, g: 0.38370863, b: 0.9528302, a: 1}
-    - _RColor: {r: 0.615957, g: 0.6320754, b: 0.30113026, a: 1}
+    - _RColor: {r: 0.3019608, g: 0.6313726, b: 0.56732994, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
