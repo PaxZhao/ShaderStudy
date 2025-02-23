@@ -754,6 +754,7 @@
     "m_OutputNode": {
         "m_Id": ""
     },
+    "m_SubDatas": [],
     "m_ActiveTargets": [
         {
             "m_Id": "d2949a4be0a74bc4813cf872cecdcad3"
@@ -1992,8 +1993,8 @@
     "m_ObjectId": "4aa6576c4c65465d86147d20f81bfc90",
     "m_Title": "ToonLighting",
     "m_Position": {
-        "x": 10.0,
-        "y": 10.0
+        "x": -2397.0,
+        "y": -478.99993896484377
     }
 }
 
@@ -2496,6 +2497,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "60ca41817d97492293da4fb1c84869cb",
+    "m_Id": 8,
+    "m_DisplayName": "Attenuation",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Attenuation",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "613e2a0c8fac4959a3036b1fe7623c01",
     "m_Id": 1,
@@ -2618,7 +2634,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -2672,8 +2688,8 @@
     "m_ObjectId": "6d2776bd933549ee8c1c321fc41840f6",
     "m_Title": "Mask",
     "m_Position": {
-        "x": 135.49960327148438,
-        "y": -949.5000610351563
+        "x": 136.0,
+        "y": -949.9999389648438
     }
 }
 
@@ -3371,8 +3387,8 @@
     "m_ObjectId": "9289c7fbccec46adb299de89becd3136",
     "m_Title": "Texture",
     "m_Position": {
-        "x": -1547.5003662109375,
-        "y": -1554.500244140625
+        "x": -1546.9998779296875,
+        "y": -1555.0
     }
 }
 
@@ -3872,9 +3888,9 @@
         "m_Position": {
             "serializedVersion": "2",
             "x": -2011.0,
-            "y": -105.5000228881836,
-            "width": 289.0,
-            "height": 398.0000305175781
+            "y": -104.99999237060547,
+            "width": 286.0,
+            "height": 397.9999694824219
         }
     },
     "m_Slots": [
@@ -3903,7 +3919,7 @@
             "m_Id": "932a7e95f37946dd99f850d6a56d93c8"
         },
         {
-            "m_Id": "d3e985fdcbd4422e8d1b59969c8cbac0"
+            "m_Id": "60ca41817d97492293da4fb1c84869cb"
         }
     ],
     "synonyms": [],
@@ -3916,7 +3932,7 @@
     },
     "m_SourceType": 0,
     "m_FunctionName": "ToonShading",
-    "m_FunctionSource": "718b02f4a5eaa734a9d525389cfb5941",
+    "m_FunctionSource": "0b2158e7249730a428af11c0243bd273",
     "m_FunctionBody": "#ifdef SHADERGRAPH_PREVIEW\nToonRampOutput = float3(0.5,0.5,0);\nDirection = float3(0.5,0.5,0);\n#else\n#if SHADOWS_SCREEN\r\nhalf4 shadowCoord = ComputeScreenPos(ClipSpacePos);\r\n#else\r\nhalf4 shadowCoord = TransformWorldToShadowCoord(WorldPos);\r\n#endif \n#if _MAIN_LIGHT_SHADOWS_CASCADE || _MAIN_LIGHT_SHADOWS\r\nLight light = GetMainLight(shadowCoord);\n#else\nLight light = GetMainLight();\n#endif\nhalf d = dot(Normal, light.direction) * 0.5 + 0.5;\r\t\r\nhalf lightIntensity = smoothstep(ToonRampOffset, ToonRampOffset+ ToonRamp, d + light.shadowAttenuation);\r\n\nToonRampOutput = light.color * (lightIntensity + ToonRampTinting) ;\nDirection = light.direction;\n#endif\n\n"
 }
 
@@ -4375,7 +4391,7 @@
     "m_DefaultValue": {
         "x": 0.0,
         "y": 0.0,
-        "z": 0.0
+        "z": 1.0
     },
     "m_Labels": []
 }
@@ -4547,24 +4563,12 @@
     "m_AlphaClip": false,
     "m_CastShadows": true,
     "m_ReceiveShadows": true,
+    "m_DisableTint": false,
+    "m_AdditionalMotionVectorMode": 0,
+    "m_AlembicMotionVectors": false,
     "m_SupportsLODCrossFade": false,
     "m_CustomEditorGUI": "",
     "m_SupportVFX": false
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "d3e985fdcbd4422e8d1b59969c8cbac0",
-    "m_Id": 8,
-    "m_DisplayName": "Attenuation",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Attenuation",
-    "m_StageCapability": 3,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
 }
 
 {
@@ -4604,7 +4608,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -4655,7 +4659,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -5004,8 +5008,8 @@
     "m_ObjectId": "ea79bb2fb03845db8aeb1b2c7547ddde",
     "m_Title": "RimLight",
     "m_Position": {
-        "x": -1717.500244140625,
-        "y": -1009.0000610351563
+        "x": -1716.9998779296875,
+        "y": -1008.9999389648438
     }
 }
 
@@ -5036,7 +5040,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0

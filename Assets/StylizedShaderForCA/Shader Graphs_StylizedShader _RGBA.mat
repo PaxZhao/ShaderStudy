@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6047306666385192429
+--- !u!114 &-3823997385769741793
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mat_PlumboCustomizeable
-  m_Shader: {fileID: -6465566751694194690, guid: a775b86a643639d418e7e073dea382ca, type: 3}
+  m_Name: Shader Graphs_StylizedShader _RGBA
+  m_Shader: {fileID: -6465566751694194690, guid: e494235325b2c5e4b9c7f7225b97b2df, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -37,48 +37,32 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _ANormal:
-        m_Texture: {fileID: 2800000, guid: 82f0a2a4c60799b42aeaec656c7d2ac0, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _AO:
-        m_Texture: {fileID: 2800000, guid: 7cac55c821879b44c9bf53187abf5809, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BNormal:
-        m_Texture: {fileID: 2800000, guid: 376acec26d7e74a40b4b2bda2b456a37, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BaseGloss:
+    - MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _BaseMetallic:
-        m_Texture: {fileID: 2800000, guid: 36eab0faf8eadcf42be094fba51917b5, type: 3}
+    - Mask_R_Emission:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Extras:
         m_Texture: {fileID: 2800000, guid: bcea54e072ca4934097c6fcfd39285aa, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _GNormal:
-        m_Texture: {fileID: 2800000, guid: 82f0a2a4c60799b42aeaec656c7d2ac0, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _Metallic:
         m_Texture: {fileID: 2800000, guid: 36eab0faf8eadcf42be094fba51917b5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTexture:
+        m_Texture: {fileID: 2800000, guid: 82f0a2a4c60799b42aeaec656c7d2ac0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RGBMap:
         m_Texture: {fileID: 2800000, guid: f3d858f0f1aa28045841cbb0e8169b75, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _RNormal:
-        m_Texture: {fileID: 2800000, guid: 82f0a2a4c60799b42aeaec656c7d2ac0, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_a264895804194c34bb812169bf874857_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: bcea54e072ca4934097c6fcfd39285aa, type: 3}
+    - _SampleTexture2D_6ee0846a301e4977b2ad70a585f3c23c_Texture_1_Texture2D:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -95,23 +79,41 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AMetallic: 1
+    - Brightness_Rim: 0.6
+    - Rim_Power: 1.6
+    - Toon_Ramp_Offset: 0.45
+    - Toon_Ramp_Smoothness: 0.48
     - _AOpacity: 1
-    - _ASmoothness: 0
-    - _BMetallic: 1
+    - _AlphaClip: 0
+    - _AlphaToMask: 0
     - _BOpacity: 1
-    - _BSmoothness: 0.9
-    - _GMetallic: 1
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 0
+    - _CastShadows: 1
+    - _CrackStrength: 8.77
+    - _Cull: 0
+    - _DstBlend: 0
     - _GOpacity: 1
-    - _GSmoothness: 0.2
+    - _MetallicStrength: 0.36
+    - _NormalStrength: 13.34
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ROpacity: 1
-    - _RSmoothness: -0.33
+    - _ReceiveShadows: 1
+    - _Smoothness: 0.3
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _WorkflowMode: 0
+    - _ZTest: 4
+    - _ZWrite: 1
+    - _ZWriteControl: 0
     m_Colors:
-    - _AColour: {r: 0.9607843, g: 0, b: 0.40736136, a: 1}
-    - _BColour: {r: 0.9150943, g: 0, b: 0.8822166, a: 1}
-    - _GColour: {r: 0.047970813, g: 0.9245283, b: 0.8899275, a: 1}
-    - _RColour: {r: 1, g: 1, b: 1, a: 1}
+    - Toon_Ramp_Tint: {r: 0.60226256, g: 0.16820934, b: 0.7924528, a: 1}
+    - _AColor: {r: 0.7075472, g: 0.4038359, b: 0.4038359, a: 1}
+    - _BColor: {r: 0.1383054, g: 0.7924528, b: 0.18261373, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _DColor: {r: 0, g: 0, b: 0, a: 0}
+    - _GColor: {r: 0.31011927, g: 0.38370863, b: 0.9528302, a: 1}
+    - _RColor: {r: 0.615957, g: 0.6320754, b: 0.30113026, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
