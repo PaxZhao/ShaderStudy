@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BaseMaterial 1
+  m_Name: UnlitWavesBaseMaterial
   m_Shader: {fileID: 4800000, guid: 7f96d6f5101e88e4ab875e56c6926d1f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -104,7 +104,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _ColorEnd: 1
+    - _ColorEnd: 0.49
     - _ColorStart: 0
     - _Cull: 2
     - _Cutoff: 0.5
@@ -135,9 +135,9 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.3265307, g: 1, b: 0, a: 1}
-    - _ColorA: {r: 0.9056604, g: 0.64213943, b: 0.06407974, a: 1}
-    - _ColorB: {r: 0.20747633, g: 0.10980392, b: 0.25490198, a: 1}
+    - _Color: {r: 1.1382278, g: 0.123487, b: 0.123487, a: 1}
+    - _ColorA: {r: 0.8962264, g: 0.054957304, b: 0.054957304, a: 1}
+    - _ColorB: {r: 0.13942091, g: 0.07524917, b: 0.8396226, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
