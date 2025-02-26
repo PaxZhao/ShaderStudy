@@ -107,7 +107,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ROpacity: 1
-    - _RSmoothness: -0.33
+    - _RSmoothness: 0.94
     m_Colors:
     - _AColour: {r: 0.9607843, g: 0, b: 0.40736136, a: 1}
     - _BColour: {r: 0.9150943, g: 0, b: 0.8822166, a: 1}

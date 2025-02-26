@@ -42,11 +42,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Mask_R_Emission:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: d251bdb0f4b6ff54193103ca3b50ced6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Extras:
         m_Texture: {fileID: 2800000, guid: bcea54e072ca4934097c6fcfd39285aa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ExtrasMap:
+        m_Texture: {fileID: 2800000, guid: bcea54e072ca4934097c6fcfd39285aa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask_Using_red:
+        m_Texture: {fileID: 2800000, guid: d251bdb0f4b6ff54193103ca3b50ced6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Metallic:
@@ -55,6 +63,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _NormalTexture:
         m_Texture: {fileID: 2800000, guid: 82f0a2a4c60799b42aeaec656c7d2ac0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RGBAMap:
+        m_Texture: {fileID: 2800000, guid: f3d858f0f1aa28045841cbb0e8169b75, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RGBMap:
@@ -79,10 +91,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Brightness_Rim: 0.6
+    - Brightness_Rim: 0.39
     - Rim_Power: 1.6
-    - Toon_Ramp_Offset: 0.48
-    - Toon_Ramp_Smoothness: 0.21
+    - Toon_Ramp_Offset: 0.38
+    - Toon_Ramp_Smoothness: 0.37
     - _AOpacity: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
@@ -94,13 +106,13 @@ Material:
     - _Cull: 0
     - _DstBlend: 0
     - _GOpacity: 1
-    - _MetallicStrength: 0.36
+    - _MetallicStrength: 0.57
     - _NormalStrength: 0.9
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ROpacity: 1
     - _ReceiveShadows: 1
-    - _Smoothness: 0.3
+    - _Smoothness: 0.1
     - _SrcBlend: 1
     - _Surface: 0
     - _WorkflowMode: 0
@@ -108,12 +120,13 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - Toon_Ramp_Tint: {r: 0.60226256, g: 0.16820934, b: 0.7924528, a: 1}
-    - _AColor: {r: 0.7075472, g: 0.4038359, b: 0.4038359, a: 1}
-    - _BColor: {r: 0.1383054, g: 0.7924528, b: 0.18261373, a: 1}
+    - Toon_Ramp_Tint: {r: 0.60226256, g: 0.16820931, b: 0.7924528, a: 1}
+    - _AColor: {r: 0.5849056, g: 0.11311853, b: 0.57954246, a: 1}
+    - _BColor: {r: 0, g: 0.8396226, b: 0.6838843, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _DColor: {r: 0, g: 0, b: 0, a: 0}
-    - _GColor: {r: 0.31011927, g: 0.38370863, b: 0.9528302, a: 1}
-    - _RColor: {r: 0.3019608, g: 0.6313726, b: 0.56732994, a: 1}
+    - _GColor: {r: 1, g: 0.58885556, b: 0, a: 1}
+    - _OverallColor: {r: 1, g: 1, b: 1, a: 0}
+    - _RColor: {r: 0.18431373, g: 0.32941177, b: 0.65882355, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
