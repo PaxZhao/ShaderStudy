@@ -1392,20 +1392,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "e9066678904e4fd590e41227b2822728"
-                },
-                "m_SlotId": 2
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "af9127fd42e94b65b60f5ff0e9c08b16"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "ee1355389e0d4224a22201ded344dbc9"
                 },
                 "m_SlotId": 0
@@ -1914,9 +1900,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2705.999755859375,
-            "y": -2156.0,
-            "width": 208.0,
+            "x": -2746.000244140625,
+            "y": -2426.0,
+            "width": 208.000244140625,
             "height": 361.0
         }
     },
@@ -2186,9 +2172,6 @@
             "m_Id": "9f83564e81244d818b5a0ed565ac8d30"
         },
         {
-            "m_Id": "733e59a1ea814f5ca88f3af39ae5a75f"
-        },
-        {
             "m_Id": "63005d5d843948a1b6128d6bde1291b5"
         },
         {
@@ -2226,6 +2209,9 @@
         },
         {
             "m_Id": "56f3aede1f314bb8a87d0845c37a10a7"
+        },
+        {
+            "m_Id": "733e59a1ea814f5ca88f3af39ae5a75f"
         },
         {
             "m_Id": "4b5ccb52d8e4492195f4ac531a31e083"
@@ -3201,8 +3187,8 @@
     "m_ObjectId": "2cfac8db1fa642a8b5329e10c879754a",
     "m_Title": "RGBA Base map",
     "m_Position": {
-        "x": -5474.0009765625,
-        "y": -3541.000244140625
+        "x": -5474.0,
+        "y": -3541.0
     }
 }
 
@@ -3447,10 +3433,10 @@
     "m_Guid": {
         "m_GuidSerialized": "44ec7c5d-e4fd-48b6-8a20-b4db9b0b9b9a"
     },
-    "m_Name": "RGBAMap",
+    "m_Name": "RGBMap",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "RGBAMap",
-    "m_DefaultReferenceName": "_RGBAMap",
+    "m_RefNameGeneratedByDisplayName": "RGBMap",
+    "m_DefaultReferenceName": "_RGBMap",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -4118,8 +4104,8 @@
     "m_ObjectId": "4aa6576c4c65465d86147d20f81bfc90",
     "m_Title": "ToonLighting",
     "m_Position": {
-        "x": -2677.000244140625,
-        "y": -513.0001220703125
+        "x": -2677.0,
+        "y": -513.0
     }
 }
 
@@ -4150,7 +4136,7 @@
     "m_RefNameGeneratedByDisplayName": "MetallicStrength",
     "m_DefaultReferenceName": "_MetallicStrength",
     "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": false,
+    "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
     "m_CustomSlotLabel": "",
     "m_DismissedVersion": 0,
@@ -4790,7 +4776,7 @@
     "m_RefNameGeneratedByDisplayName": "Metallic",
     "m_DefaultReferenceName": "_Metallic",
     "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": false,
+    "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
     "m_CustomSlotLabel": "",
     "m_DismissedVersion": 0,
@@ -4840,10 +4826,10 @@
     "m_Guid": {
         "m_GuidSerialized": "621a6c2b-f5ab-4ef5-b61b-7b903d60b716"
     },
-    "m_Name": "ExtrasMap",
+    "m_Name": "Extras",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "ExtrasMap",
-    "m_DefaultReferenceName": "_ExtrasMap",
+    "m_RefNameGeneratedByDisplayName": "Extras",
+    "m_DefaultReferenceName": "_Extras",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -4942,8 +4928,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2016.999755859375,
-            "y": -1845.999755859375,
+            "x": -1995.000244140625,
+            "y": -1944.000244140625,
             "width": 183.0,
             "height": 251.0
         }
@@ -5815,7 +5801,7 @@
     "m_RefNameGeneratedByDisplayName": "MainTex",
     "m_DefaultReferenceName": "MainTex",
     "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": false,
+    "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
     "m_CustomSlotLabel": "",
     "m_DismissedVersion": 0,
@@ -5973,7 +5959,7 @@
     "m_ObjectId": "6d2776bd933549ee8c1c321fc41840f6",
     "m_Title": "Mask",
     "m_Position": {
-        "x": -25.99993896484375,
+        "x": -26.0,
         "y": -1040.0
     }
 }
@@ -5990,10 +5976,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1471.0001220703125,
-            "y": 169.00001525878907,
+            "x": 1460.0,
+            "y": 233.0,
             "width": 140.0,
-            "height": 33.99995422363281
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -7717,8 +7703,8 @@
     "m_ObjectId": "9289c7fbccec46adb299de89becd3136",
     "m_Title": "Texture",
     "m_Position": {
-        "x": -2169.000244140625,
-        "y": -2003.000244140625
+        "x": -2169.0,
+        "y": -2003.0
     }
 }
 
@@ -8231,7 +8217,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "a162d712e3f54a229024335a0e5c381c",
     "m_Id": 0,
-    "m_DisplayName": "RGBAMap",
+    "m_DisplayName": "RGBMap",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -9419,7 +9405,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "bebd2354b59d42039fb27dd5ca07cccd",
     "m_Id": 0,
-    "m_DisplayName": "ExtrasMap",
+    "m_DisplayName": "Extras",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -9470,7 +9456,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "c1a113428c544755b596ade0a76b5b70",
     "m_Id": 0,
-    "m_DisplayName": "Mask(Using red)",
+    "m_DisplayName": "Mask(R = Emission)",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -9571,7 +9557,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "c6ff20808c43490f89b023cdafa0f6b8",
     "m_Id": 0,
-    "m_DisplayName": "OverallColor",
+    "m_DisplayName": "Color",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -9709,10 +9695,10 @@
     "m_Guid": {
         "m_GuidSerialized": "790e7648-c9d2-4f81-b96e-972fe2a0368d"
     },
-    "m_Name": "OverallColor",
+    "m_Name": "Color",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "OverallColor",
-    "m_DefaultReferenceName": "_OverallColor",
+    "m_RefNameGeneratedByDisplayName": "Color",
+    "m_DefaultReferenceName": "_Color",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -9952,9 +9938,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -3053.999755859375,
-            "y": -2733.0,
-            "width": 208.0,
+            "x": -3018.000244140625,
+            "y": -2971.0,
+            "width": 208.000244140625,
             "height": 435.0
         }
     },
@@ -10193,10 +10179,10 @@
     "m_Guid": {
         "m_GuidSerialized": "966aef50-edca-4745-b3b0-03d536de2172"
     },
-    "m_Name": "Mask(Using red)",
+    "m_Name": "Mask(R = Emission)",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Mask(Using red)",
-    "m_DefaultReferenceName": "_Mask_Using_red",
+    "m_RefNameGeneratedByDisplayName": "Mask(R = Emission)",
+    "m_DefaultReferenceName": "Mask_R_Emission",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -10630,10 +10616,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1039.0,
-            "y": -472.9999694824219,
-            "width": 208.0,
-            "height": 301.99993896484377
+            "x": 965.5714721679688,
+            "y": -917.571533203125,
+            "width": 127.71429443359375,
+            "height": 117.85718536376953
         }
     },
     "m_Slots": [
@@ -10741,8 +10727,8 @@
     "m_ObjectId": "ea79bb2fb03845db8aeb1b2c7547ddde",
     "m_Title": "RimLight",
     "m_Position": {
-        "x": -2711.000244140625,
-        "y": -1314.0001220703125
+        "x": -2711.0,
+        "y": -1314.0
     }
 }
 
