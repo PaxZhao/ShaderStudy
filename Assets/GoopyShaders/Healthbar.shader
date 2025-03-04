@@ -5,6 +5,7 @@ Shader "ShaderStudy/Healthbar"
         //_Color ("Color", Color) = (1,1,1,1)
         [NoScaleOffset]_MainTex ("Albedo (RGB)", 2D) = "white" {}
         _Health ("Health", Range(0,1)) = 1
+        _BorderSize ("Border Size", Range(0,0.5)) = .1
 
     }
     SubShader
@@ -44,6 +45,7 @@ Shader "ShaderStudy/Healthbar"
 
             sampler2D _MainTex;
             float _Health;
+            float _BorderSize;
 
             Interpolators vert (MeshData v)
             {
@@ -61,7 +63,25 @@ Shader "ShaderStudy/Healthbar"
 
             float4 frag (Interpolators i) : SV_Target
             {
-                
+                //rounded corner
+                float2 coords = i.uv;
+                coords.x *=10;
+
+                float2 pointOnLineSeg = float2(clamp(coords.x,0.5,9.5),0.5);
+                float sdf = distance(coords, pointOnLineSeg)*2 - 1;
+
+                clip(-sdf);
+
+                //border
+                float borderSdf = sdf + _BorderSize;
+
+                float pd = fwidth(borderSdf);//fwidth() is like fragment's width,is a simple way to get the rate of change
+                                            //fwidth(borderSdf)is the screen space partial derivative of the Signed Distance Field
+                //float borderMask = step(borderSdf,0);
+                float borderMask = 1-saturate(borderSdf/pd);
+
+
+    
 
                 float healthbarMask = _Health > i.uv.x;
                 //clip(healthbarMask - 0.001); //if the value is less than zero, it will discard the current fragment being rendered.
@@ -81,7 +101,7 @@ Shader "ShaderStudy/Healthbar"
                 }
                     
 
-                return float4(healthbarCol.xyz*healthbarMask,1);
+                return float4(healthbarCol.xyz*healthbarMask*borderMask,1);
 
             }
             ENDCG
