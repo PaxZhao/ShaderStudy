@@ -70,7 +70,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RGBMap:
-        m_Texture: {fileID: 2800000, guid: f3d858f0f1aa28045841cbb0e8169b75, type: 3}
+        m_Texture: {fileID: 2800000, guid: fafff5a159fea7443802e6fde06bb9f3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_6ee0846a301e4977b2ad70a585f3c23c_Texture_1_Texture2D:
@@ -121,12 +121,12 @@ Material:
     - _ZWriteControl: 0
     m_Colors:
     - Toon_Ramp_Tint: {r: 0.60226256, g: 0.16820931, b: 0.7924528, a: 1}
-    - _AColor: {r: 0.5849056, g: 0.11311853, b: 0.57954246, a: 1}
-    - _BColor: {r: 0, g: 0.8396226, b: 0.6838843, a: 1}
+    - _AColor: {r: 0.13519736, g: 0.58431375, b: 0.11372549, a: 1}
+    - _BColor: {r: 0.8392157, g: 0.031826578, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _DColor: {r: 0, g: 0, b: 0, a: 0}
-    - _GColor: {r: 1, g: 0.58885556, b: 0, a: 1}
+    - _GColor: {r: 0, g: 0.9367819, b: 1, a: 1}
     - _OverallColor: {r: 1, g: 1, b: 1, a: 0}
-    - _RColor: {r: 0.18431373, g: 0.32941177, b: 0.65882355, a: 1}
+    - _RColor: {r: 0.09678713, g: 0.20575927, b: 0.7075472, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
